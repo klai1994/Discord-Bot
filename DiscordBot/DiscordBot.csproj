@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{14D0BD7F-806B-45B1-AACB-5F8753042DBE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DiscordBot</RootNamespace>
+    <AssemblyName>DiscordBot</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AIMLbot, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AIMLbot.dll</HintPath>
+    </Reference>
+    <Reference Include="Discord.Net, Version=0.9.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Discord.Net.0.9.4\lib\net45\Discord.Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nito.AsyncEx, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nito.AsyncEx.3.0.1\lib\net45\Nito.AsyncEx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nito.AsyncEx.Concurrent, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nito.AsyncEx.3.0.1\lib\net45\Nito.AsyncEx.Concurrent.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nito.AsyncEx.Enlightenment, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nito.AsyncEx.3.0.1\lib\net45\Nito.AsyncEx.Enlightenment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.105.2.3\lib\net452\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebSocket4Net, Version=0.14.1.0, Culture=neutral, PublicKeyToken=eb4e154b696bf72a, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebSocket4Net.0.14.1\lib\net45\WebSocket4Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alice.cs" />
+    <Compile Include="DiscordBot.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="bin\Debug\aiml\20q.aiml" />
+    <None Include="bin\Debug\aiml\AI.aiml" />
+    <None Include="bin\Debug\aiml\Atomic.aiml" />
+    <None Include="bin\Debug\aiml\binary.aiml" />
+    <None Include="bin\Debug\aiml\Biography.aiml" />
+    <None Include="bin\Debug\aiml\bornin.aiml" />
+    <None Include="bin\Debug\aiml\Bot.aiml" />
+    <None Include="bin\Debug\aiml\Botmaster.aiml" />
+    <None Include="bin\Debug\aiml\Client.aiml" />
+    <None Include="bin\Debug\aiml\Computers.aiml" />
+    <None Include="bin\Debug\aiml\currency.aiml" />
+    <None Include="bin\Debug\aiml\CustomTagTest.aiml" />
+    <None Include="bin\Debug\aiml\daystoxmas.aiml" />
+    <None Include="bin\Debug\aiml\Default.aiml" />
+    <None Include="bin\Debug\aiml\Emotion.aiml" />
+    <None Include="bin\Debug\aiml\Food.aiml" />
+    <None Include="bin\Debug\aiml\gender.aiml" />
+    <None Include="bin\Debug\aiml\Geography.aiml" />
+    <None Include="bin\Debug\aiml\happy.aiml" />
+    <None Include="bin\Debug\aiml\History.aiml" />
+    <None Include="bin\Debug\aiml\horoscope.aiml" />
+    <None Include="bin\Debug\aiml\howmany.aiml" />
+    <None Include="bin\Debug\aiml\Inquiry.aiml" />
+    <None Include="bin\Debug\aiml\Interjection.aiml" />
+    <None Include="bin\Debug\aiml\IU.aiml" />
+    <None Include="bin\Debug\aiml\jokes.aiml" />
+    <None Include="bin\Debug\aiml\knockknock.aiml" />
+    <None Include="bin\Debug\aiml\Knowledge.aiml" />
+    <None Include="bin\Debug\aiml\Literature.aiml" />
+    <None Include="bin\Debug\aiml\Money.aiml" />
+    <None Include="bin\Debug\aiml\Movies.aiml" />
+    <None Include="bin\Debug\aiml\Music.aiml" />
+    <None Include="bin\Debug\aiml\onthisday.aiml" />
+    <None Include="bin\Debug\aiml\Personality.aiml" />
+    <None Include="bin\Debug\aiml\Philosophy.aiml" />
+    <None Include="bin\Debug\aiml\Pickup.aiml" />
+    <None Include="bin\Debug\aiml\Predicates.aiml" />
+    <None Include="bin\Debug\aiml\Reduce.aiml" />
+    <None Include="bin\Debug\aiml\Reductions.aiml" />
+    <None Include="bin\Debug\aiml\Salutations.aiml" />
+    <None Include="bin\Debug\aiml\Science.aiml" />
+    <None Include="bin\Debug\aiml\seasons.aiml" />
+    <None Include="bin\Debug\aiml\shutup.aiml" />
+    <None Include="bin\Debug\aiml\Stack.aiml" />
+    <None Include="bin\Debug\aiml\Stories.aiml" />
+    <None Include="bin\Debug\aiml\That.aiml" />
+    <None Include="bin\Debug\aiml\yomama.aiml" />
+    <None Include="bin\Debug\DiscordBot.exe.config" />
+    <None Include="bin\Debug\DiscordBot.vshost.exe.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\config\" />
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\AIMLbot.dll" />
+    <Content Include="bin\Debug\AIMLbot.pdb" />
+    <Content Include="bin\Debug\Discord.Net.dll" />
+    <Content Include="bin\Debug\DiscordBot.exe" />
+    <Content Include="bin\Debug\DiscordBot.pdb" />
+    <Content Include="bin\Debug\DiscordBot.vshost.exe" />
+    <Content Include="bin\Debug\Newtonsoft.Json.dll" />
+    <Content Include="bin\Debug\Newtonsoft.Json.xml" />
+    <Content Include="bin\Debug\Nito.AsyncEx.Concurrent.dll" />
+    <Content Include="bin\Debug\Nito.AsyncEx.Concurrent.xml" />
+    <Content Include="bin\Debug\Nito.AsyncEx.dll" />
+    <Content Include="bin\Debug\Nito.AsyncEx.Enlightenment.dll" />
+    <Content Include="bin\Debug\Nito.AsyncEx.Enlightenment.xml" />
+    <Content Include="bin\Debug\Nito.AsyncEx.xml" />
+    <Content Include="bin\Debug\RestSharp.dll" />
+    <Content Include="bin\Debug\RestSharp.xml" />
+    <Content Include="bin\Debug\WebSocket4Net.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
