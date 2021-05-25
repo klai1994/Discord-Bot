@@ -25,7 +25,7 @@ namespace DiscordBot
                 while(true)
                     try
                     {
-                        await bot.Connect("MjAyMTcyODA0MTQ0MTY4OTYw.CmWfmA.t_oaEGssv_LP85j4XinHHGE5L7o");
+                        await bot.Connect("");
                         break;
                     }
                     catch
